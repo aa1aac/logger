@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import {Provider} from 'react-redux'
+import { Provider } from "react-redux";
 
 import SearchBar from "./components/layout/SearchBar";
 import Logs from "./components/logs/Logs";
@@ -9,7 +9,7 @@ import EditLogModal from "./components/logs/EditLogModal";
 import AddTechModal from "./components/techs/AddTechModal";
 import TechListModal from "./components/techs/TechListModal";
 
-import store from './store'
+import store from "./store";
 
 import "./App.css";
 import "materialize-css/dist/css/materialize.min.css";
@@ -23,21 +23,21 @@ const App = () => {
   });
   return (
     <Provider store={store}>
-    <Fragment>
-      <SearchBar />
-      <div className="container">
-        <AddBtn />
-        <AddLogModal />
-        <EditLogModal />
-        <AddTechModal />
-        <TechListModal />
-        <Logs />
-      </div>
-    </Fragment>
+      <Fragment>
+        <SearchBar />
+        <div className="container">
+          <AddBtn />
+          <AddLogModal />
+          <EditLogModal />
+          <AddTechModal />
+          <TechListModal />
+          <Logs />
+        </div>
+      </Fragment>
     </Provider>
   );
 };
 
-// 11.8
+// 12.3
 
 export default App;
