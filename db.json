@@ -1,10 +1,10 @@
 {
   "logs": [
     {
-      "message": "Network card failed in 001",
+      "message": "processor got burnt in 001",
       "attention": true,
       "tech": "John Doe",
-      "date": "2019-11-12T14:59:53.939Z",
+      "date": "2019-11-14T10:13:16.508Z",
       "id": 1
     }
   ],
