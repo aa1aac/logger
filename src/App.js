@@ -21,6 +21,7 @@ const App = () => {
     // init materialize JS
     M.AutoInit();
   });
+  
   return (
     <Provider store={store}>
       <Fragment>
@@ -38,6 +39,6 @@ const App = () => {
   );
 };
 
-// 12.7
+// 13
 
 export default App;
