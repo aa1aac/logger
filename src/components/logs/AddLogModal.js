@@ -3,6 +3,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 import { connect } from "react-redux";
 
 import { addLog } from "../../actions/logActions";
+import TechsSelectOptions from "../techs/TechsSelectOptions";
 
 const AddLogModal = ({ addLog }) => {
   const [message, setMessage] = useState("");
@@ -13,16 +14,16 @@ const AddLogModal = ({ addLog }) => {
     if (message === "" || tech === "") {
       M.toast({ html: "Please enter a message and tech" });
     } else {
-      const newLog ={
+      const newLog = {
         message,
         attention,
         tech,
         date: new Date()
-      }
+      };
 
-      addLog(newLog)
+      addLog(newLog);
 
-      M.toast({html:`Log added by ${tech}`})
+      M.toast({ html: `Log added by ${tech}` });
     }
   };
 
@@ -57,9 +58,7 @@ const AddLogModal = ({ addLog }) => {
                 {" "}
                 select technician
               </option>
-              <option value="John Doe">John Doe</option>
-              <option value="Sam Smith">Sam Smith</option>
-              <option value="Sara Wilson">Sara Wilson</option>
+              <TechsSelectOptions />
             </select>
           </div>
         </div>
