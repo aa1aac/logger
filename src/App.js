@@ -39,6 +39,4 @@ const App = () => {
   );
 };
 
-// 13.2
-
 export default App;
